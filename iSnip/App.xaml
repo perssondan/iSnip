@@ -1,0 +1,12 @@
+﻿<Application x:Class="Cenito.iSnip.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ioc="clr-namespace:Cenito.iSnip.IoC"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:d1p1="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             d1p1:Ignorable="d"
+             StartupUri="Views/MainWindow.xaml">
+    <Application.Resources>
+        <ioc:ServiceLocator x:Key="ServiceLocator" d:IsDataSource="True" />
+    </Application.Resources>
+</Application>
